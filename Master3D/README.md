@@ -1,1 +1,1 @@
-# CobolGL
+# Implemetnacja wybranych algorytmów OIT
