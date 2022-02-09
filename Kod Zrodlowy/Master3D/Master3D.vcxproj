@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DEBUG_LAPTOP|Win32">
+      <Configuration>DEBUG_LAPTOP</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8E50F876-C4A3-43A5-868F-B5460D5E87E6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Master3D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG_LAPTOP|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG_LAPTOP|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Projects\C++\Master3D\Master3D\Include;E:\Projects\C++\Master3D\libs\assimp-3.3.1\include;D:\Projects\C++\Master3D\libs\include;E:\Projects\C++\Master3D\libs\glew-2.1.0\include;D:\Projects\C++\Master3D\libs\freetype-gl\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\C++\Master3D\libs\freetype-gl\Lib\Debug;D:\Projects\C++\Master3D\libs\assimp-3.3.1\bin\code\Debug;D:\Projects\C++\Master3D\libs\libs\FreeImage;D:\Projects\C++\Master3D\libs\libs\RelWithDebInfo;D:\Projects\C++\Master3D\libs\glew-2.1.0\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG_LAPTOP|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\Projects\C++\Master3D\Master3D\Include;E:\Projects\C++\Master3D\libs\assimp-3.3.1\include;E:\Projects\C++\Master3D\libs\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)packages\glew.1.9.0.1\build\native\lib\v110\Win32\Debug\dynamic;$(SolutionDir)libs\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\Projects\C++\Master3D\Master3D\Include;E:\Projects\C++\Master3D\libs\assimp-3.3.1\include;E:\Projects\C++\Master3D\libs\include;E:\Projects\C++\Master3D\libs\glew-2.1.0\include;E:\Projects\C++\Master3D\libs\freetype-gl\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Projects\C++\Master3D\libs\freetype-gl\Lib\Debug;E:\Projects\C++\Master3D\libs\glew-2.1.0\lib\Release\Win32;$(SolutionDir)libs\libs\Assimp\Release;$(SolutionDir)libs\libs\FreeImage;$(SolutionDir)packages\glew.1.9.0.1\build\native\lib\v110\Win32\Release\dynamic;$(SolutionDir)libs\libs\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32.lib;freeimage.lib;assimp-vc140-mt.lib;freetype-gl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG_LAPTOP|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32.lib;freeimage.lib;assimp-vc140-mt.lib;freetype-gl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\ApplicationAbstract.h" />
+    <ClInclude Include="Include\ABuffer\AbufferApplication.h" />
+    <ClInclude Include="Include\ApplicationCustom.h" />
+    <ClInclude Include="Billboard.h" />
+    <ClInclude Include="Include\Billboard.h" />
+    <ClInclude Include="Include\CobMath.h" />
+    <ClInclude Include="Include\ControllerRec.h" />
+    <ClInclude Include="Include\Crypto\md5.h" />
+    <ClInclude Include="Include\CustomAlpha\GBufferArray.h" />
+    <ClInclude Include="Include\CustomAlpha\GBufferCustomAlpha.h" />
+    <ClInclude Include="Include\Exceptions\IOException.h" />
+    <ClInclude Include="Include\Exceptions\UnknownImageFormat.h" />
+    <ClInclude Include="Include\GBuffer.h" />
+    <ClInclude Include="Include\GBufferAlpha.h" />
+    <ClInclude Include="Include\GLUtils.h" />
+    <ClInclude Include="Include\Grass\GrassBlade.h" />
+    <ClInclude Include="Include\NBuffer\NbufferApplication.h" />
+    <ClInclude Include="Include\Particles\AlphaParticle.h" />
+    <ClInclude Include="Include\Properties.h" />
+    <ClInclude Include="Include\Scene\DirectionLight.h" />
+    <ClInclude Include="Include\CustomAlpha\GBufferAbstract.h" />
+    <ClInclude Include="Include\Scene\LightManager.h" />
+    <ClInclude Include="Include\Math\ConstMath.h" />
+    <ClInclude Include="Include\Particles\ParticleContainer.h" />
+    <ClInclude Include="Include\PhongShader.h" />
+    <ClInclude Include="Include\Quad2D.h" />
+    <ClInclude Include="Include\Resources\Material.h" />
+    <ClInclude Include="Include\Logger.h" />
+    <ClInclude Include="Include\Math\Matrix.h" />
+    <ClInclude Include="Include\Math\Quaterion.h" />
+    <ClInclude Include="Include\Math\Vec.h" />
+    <ClInclude Include="Include\Resources\Mesh.h" />
+    <ClInclude Include="Include\Exceptions\MissingResourceException.h" />
+    <ClInclude Include="Include\Resources\ModelLoader.h" />
+    <ClInclude Include="Include\Resources\Resource.h" />
+    <ClInclude Include="Include\Resources\ResourcesManager.h" />
+    <ClInclude Include="Include\Resources\ShaderProgram.h" />
+    <ClInclude Include="Include\Resources\Texture2D.h" />
+    <ClInclude Include="Include\Scene\LightManagerSimpleImpl.h" />
+    <ClInclude Include="Include\Scene\ModelObject.h" />
+    <ClInclude Include="Include\Scene\Scene.h" />
+    <ClInclude Include="Include\Scene\SceneContext.h" />
+    <ClInclude Include="Include\Scene\SceneTransformObject.h" />
+    <ClInclude Include="Include\Scene\TransparentModelObject.h" />
+    <ClInclude Include="Include\ShaderManager.h" />
+    <ClInclude Include="Include\ShadowBuffer.h" />
+    <ClInclude Include="Include\StachosticShadowBuffer.h" />
+    <ClInclude Include="Include\StachosticTransparencyApplication.h" />
+    <ClInclude Include="Include\TimeMeasure.h" />
+    <ClInclude Include="Include\Viewport.h" />
+    <ClInclude Include="Include\Scene\SceneObject.h" />
+    <ClInclude Include="Include\Singleton.h" />
+    <ClInclude Include="Include\SkyBox.h" />
+    <ClInclude Include="Include\Resources\Texture.h" />
+    <ClInclude Include="Include\Resources\TextureType.h" />
+    <ClInclude Include="Include\Geometry\Plane.h" />
+    <ClInclude Include="Include\Scene\PointLight.h" />
+    <ClCompile Include="Src\StachosticTransparencyApplication.cpp" />
+    <ClCompile Include="Src\Abuffer\AbufferApplication.cpp" />
+    <ClCompile Include="Src\ApplicationAbstract.cpp" />
+    <ClCompile Include="Src\CustomAlpha\GBufferArray.cpp" />
+    <ClCompile Include="Src\CustomAlpha\GBufferCustomAlpha.cpp" />
+    <ClCompile Include="Src\ApplicationCustom.cpp" />
+    <ClCompile Include="Src\CustomAlpha\GBufferAbstract.cpp" />
+    <ClCompile Include="Src\Crypto\md5.cpp" />
+    <ClCompile Include="Src\GBuffer.cpp" />
+    <ClCompile Include="Src\GBufferAlpha.cpp" />
+    <ClCompile Include="Src\Grass\GrassBlade.cpp" />
+    <ClCompile Include="Src\Nbuffer\NbufferApplication.cpp" />
+    <ClCompile Include="Src\Particles\AlphaParticle.cpp" />
+    <ClCompile Include="Src\PhongShader.cpp" />
+    <ClCompile Include="Src\Scene\Scene.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="Src\SceneTransformObject.cpp" />
+    <ClCompile Include="Src\Scene\DirectionLight.cpp" />
+    <ClCompile Include="Src\Scene\LightManagerSimpleImpl.cpp" />
+    <ClCompile Include="Src\Scene\ModelObject.cpp" />
+    <ClCompile Include="Src\Scene\TransparentModelObject.cpp" />
+    <ClCompile Include="Src\ShaderManager.cpp" />
+    <ClCompile Include="Src\ShadowBuffer.cpp" />
+    <ClCompile Include="Src\StachosticShadowBuffer.cpp" />
+    <ClCompile Include="Src\TimeMeausere.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <FileType>CppCode</FileType>
+    </ClCompile>
+    <None Include="Shaders\CustomAlpha\CalcMaxMinFrag.glsl" />
+    <None Include="Shaders\CustomAlpha\CalcMaxMinVert.glsl" />
+    <Text Include="Shaders\deffered\LightCalcFragm.glsl" />
+    <Text Include="Shaders\quad2d_1btex_frag.glsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <FileType>CppHeader</FileType>
+    </Text>
+    <None Include="Shaders\CustomAlpha\multiLayerOutFrag.glsl" />
+    <None Include="Shaders\CustomAlpha\quad2dFrag.glsl" />
+    <None Include="Shaders\CustomAlpha\quad2dVert.glsl" />
+    <None Include="Shaders\CustomAlpha\quad2d_dir_tex_frag.glsl" />
+    <None Include="Shaders\deffered\AlphaBckPassFragm.glsl" />
+    <None Include="Shaders\deffered\AlphaPassFragm.glsl">
+      <FileType>CppHeader</FileType>
+    </None>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Include\WindowGL.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Scene\SceneContext.cpp" />
+    <ClCompile Include="Src\Viewport.cpp" />
+    <ClCompile Include="Src\Scene\PointLight.cpp" />
+    <ClCompile Include="Src\Geometry\Plane.cpp" />
+    <ClCompile Include="Src\GLUtils.cpp" />
+    <ClCompile Include="Src\Particles\ParticleContainer.cpp" />
+    <ClCompile Include="Include\Resources\ResourcesManager.cpp" />
+    <ClCompile Include="Src\Resources\Texture2D.cpp" />
+    <ClCompile Include="Src\Scene\SceneObject.cpp" />
+    <ClCompile Include="Src\Master3D.cpp" />
+    <ClCompile Include="Src\ControllerRec.cpp" />
+    <ClCompile Include="Src\Billboard.cpp" />
+    <ClCompile Include="Src\Quad2D.cpp" />
+    <ClCompile Include="Src\SkyBox.cpp" />
+    <ClCompile Include="Src\WindowGL.cpp" />
+    <ClCompile Include="Src\Resources\Material.cpp" />
+    <ClCompile Include="Src\Resources\Texture.cpp" />
+    <ClCompile Include="Src\Resources\ModelLoader.cpp" />
+    <ClCompile Include="Src\Logger.cpp" />
+    <ClCompile Include="Src\Resources\Mesh.cpp" />
+    <ClCompile Include="Src\Resources\ShaderProgram.cpp" />
+    <ClCompile Include="Src\Math\Matrix.cpp" />
+    <ClCompile Include="Src\Math\Quaterion.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DEBUG_LAPTOP|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Src\Math\Vec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shaders\bill_frag.glsl" />
+    <None Include="Shaders\bill_geom.glsl" />
+    <None Include="Shaders\bill_vert.glsl" />
+    <None Include="Shaders\deffered\AlphaPassNoLightFragm.glsl" />
+    <None Include="Shaders\deffered\AlphaPassVert.glsl" />
+    <None Include="Shaders\deffered\GeomPassFragm.glsl" />
+    <None Include="Shaders\deffered\GeomPassVert.glsl" />
+    <None Include="Shaders\CustomAlpha\multiLayerOutVert.glsl" />
+    <None Include="Shaders\geomFrag.glsl" />
+    <None Include="Shaders\particles\particleFrag.glsl" />
+    <None Include="Shaders\particles\particleGeom.glsl" />
+    <None Include="Shaders\particles\particleVert.glsl" />
+    <None Include="Shaders\phong\light_frag.glsl" />
+    <None Include="Shaders\phong\light_vert.glsl" />
+    <None Include="Shaders\quad2d_frag.glsl" />
+    <None Include="Shaders\quad2d_vert.glsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Shaders\shadows\randUtil.glsl" />
+    <None Include="Shaders\shadows\ShadowOpaqFragm.glsl" />
+    <None Include="Shaders\shadows\ShadowOpaqVert.glsl" />
+    <None Include="Shaders\shadows\ShadowStachosticMergeFastFragm.glsl" />
+    <None Include="Shaders\skybox_frag.glsl" />
+    <None Include="Shaders\skybox_vert.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\geomVert.glsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DEBUG_LAPTOP|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\glm.0.9.7.1\build\native\glm.targets" Condition="Exists('..\packages\glm.0.9.7.1\build\native\glm.targets')" />
+    <Import Project="..\packages\glew.redist.1.9.0.1\build\native\glew.redist.targets" Condition="Exists('..\packages\glew.redist.1.9.0.1\build\native\glew.redist.targets')" />
+    <Import Project="..\packages\glew.1.9.0.1\build\native\glew.targets" Condition="Exists('..\packages\glew.1.9.0.1\build\native\glew.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\glm.0.9.7.1\build\native\glm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\glm.0.9.7.1\build\native\glm.targets'))" />
+    <Error Condition="!Exists('..\packages\glew.redist.1.9.0.1\build\native\glew.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\glew.redist.1.9.0.1\build\native\glew.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\glew.1.9.0.1\build\native\glew.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\glew.1.9.0.1\build\native\glew.targets'))" />
+  </Target>
+</Project>
