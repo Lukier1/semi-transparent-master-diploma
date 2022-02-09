@@ -1,4 +1,4 @@
 # Wizualizowanie materiałów półprzezroczystych w czasie rzeczywistym
  
-Wyniki badań:
-https://drive.google.com/drive/folders/13j3PyNTwO8mwXSUvAnZbPkZnc8u8_HNX?usp=sharing
+Folder "Kod zrodlowy" zawiera implementacja algorytmów: A-Bufor jako referencyjny, K-Bufor, Stochastyczna przezroczystość i Weighted Blended OIT, oraz własnej zopytamlizowanej wersji K-Bufora.
+W folderze "Badania" zawarte sa wyniki badan, skrypty służące do generowania wyników, a także przykładowe uzyskane obrazy. 
